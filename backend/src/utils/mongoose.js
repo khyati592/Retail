@@ -1,4 +1,4 @@
-// ReactronPOS/backend/src/utils/mongoose.js
+// OnlineRetail/backend/src/utils/mongoose.js
 export const toObjectWithId = (doc) => {
   if (!doc) return null;
   const obj = doc.toObject();

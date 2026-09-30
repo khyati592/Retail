@@ -20,10 +20,10 @@ const OrderItemsTable = ({ items }) => {
           {items.map((item, idx) => (
             <tr key={idx}>
               <td>{item.code} - {item.name}</td>
-              <td>Rs. {item.cost}</td>
+              <td>${item.cost}</td>
               <td>{item.quantity}</td>
               <td>{item.discount}%</td>
-              <td>Rs. {item.subtotal}</td>
+              <td>${item.subtotal}</td>
             </tr>
           ))}
         </tbody>
@@ -32,7 +32,7 @@ const OrderItemsTable = ({ items }) => {
             <td colSpan="2">Total</td>
             <td>{totalQty}</td>
             <td>-</td>
-            <td>Rs. {totalValue}</td>
+            <td>${totalValue}</td>
           </tr>
         </tfoot>
       </table>

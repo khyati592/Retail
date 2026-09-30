@@ -69,17 +69,17 @@ export default function CustomerDueReportList({ reports }) {
     {
       accessorKey: 'totalAmount',
       header: 'Total Amount',
-      cell: ({ getValue }) => <span>PKR {getValue()}</span>,
+      cell: ({ getValue }) => <span>${getValue()}</span>,
       size: 120,    },
     {
       accessorKey: 'paid',
       header: 'Paid',
-      cell: ({ getValue }) => <span>PKR {getValue()}</span>,
+      cell: ({ getValue }) => <span>${getValue()}</span>,
       size: 100,    },
     {
       accessorKey: 'due',
       header: 'Due',
-      cell: ({ getValue }) => <span>PKR {getValue()}</span>,
+      cell: ({ getValue }) => <span>${getValue()}</span>,
       size: 100,    },
     {
       accessorKey: 'status',

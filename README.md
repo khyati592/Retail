@@ -1,6 +1,6 @@
-# ReactronPOS
+# OnlineRetail
 
-Modern point-of-sale system for retail management with inventory, sales, purchasing, and reporting.
+Modern point-of-sale system for retail management with inventory,products sales, purchasing, and reporting.
 
 ## Features
 

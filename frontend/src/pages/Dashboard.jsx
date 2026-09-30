@@ -36,7 +36,7 @@ ChartJS.register(
 const formatCurrency = (value) => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'PKR',
+    currency: 'USD',
   }).format(value || 0);
 };
 

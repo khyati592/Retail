@@ -60,7 +60,7 @@ const columns = [
   {
     accessorKey: 'price',
     header: 'Price',
-    cell: ({ getValue }) => `PKR ${getValue()}`,
+    cell: ({ getValue }) => `$${getValue()}`,
     size: 80,
   },
   {

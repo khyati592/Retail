@@ -2,7 +2,7 @@ import React from 'react';
 
 const formatCurrency = (value) => {
   if (value === null || value === undefined || value === '') return '—';
-  return `PKR ${Number(value)}`;
+  return `$${Number(value)}`;
 };
 
 const getPrimaryVariant = (product) => {

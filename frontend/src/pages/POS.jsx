@@ -359,7 +359,7 @@ export default function POS() {
                       </div>
 
                       {/* Price */}
-                      <div className="text-gray-700 font-semibold">PKR {item.price}</div>
+                      <div className="text-gray-700 font-semibold">${item.price}</div>
 
                       {/* quantity Controls */}
                       <div className="flex items-center justify-center gap-2">
@@ -380,7 +380,7 @@ export default function POS() {
 
                       {/* Subtotal */}
                       <div className="text-gray-700 font-semibold">
-                        PKR {(item.price * item.quantity)}
+                        ${(item.price * item.quantity).toFixed(2)}
                       </div>
 
                       {/* Delete Icon */}
@@ -418,12 +418,12 @@ export default function POS() {
                 </div>
                 <div className="flex justify-between mb-1">
                   <span className="text-gray-700">Tax (8%)</span>
-                  <span className="font-semibold">PKR {tax.toFixed(2)}</span>
+                  <span className="font-semibold">${tax.toFixed(2)}</span>
                 </div>
                 <div className="border-t border-gray-400 pt-1 flex justify-between">
                   <span className="font-bold text-lg text-gray-900">Total</span>
                   <span className="font-bold text-lg text-gray-900">
-                    PKR {total.toFixed(2)}
+                    ${total.toFixed(2)}
                   </span>
                 </div>
               </div>
@@ -501,7 +501,7 @@ export default function POS() {
                         </div>
                       <div className="flex justify-between items-center mt-1">
                         <div className="text-gray-900 font-semibold text-sm">
-                          PKR {product.price}
+                          ${product.price}
                         </div>
                         <div className="flex space-x-1">
                           <span className="bg-gray-300 text-gray-900 text-[11px] px-2 py-0.5 rounded-full">
